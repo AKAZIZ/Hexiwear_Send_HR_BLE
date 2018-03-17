@@ -4,7 +4,7 @@
 *
 *           AUTHOR: Anass KAZIZ (kaziz.anas@gmail.com)
 *           FILENAME: main.cpp
-*           LAST MODIFIED: 12/02/2017
+*           LAST MODIFIED: 12/02/2018
 *           TARGET: MK64FN1M0VDC12 (CPU: ARM® Cortex®-M4 32-bit core)
 *           COMPILER: MBED
 *
