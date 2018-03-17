@@ -44,8 +44,8 @@ MAX30101 max30101(PTB1,PTB0);
 I2C i2c_(PTB1,PTB0);
 
 DigitalOut powerEN1 (PTA29); // Power Enable MAX30101 Sensor
-DigitalOut powerEN2 (PTB12);
-DigitalOut powerEN3 (PTC13);
+DigitalOut powerEN2 (PTB12); // BOOST_EN
+DigitalOut powerEN3 (PTC13); // 3V3B_EN
 
 DigitalIn INT(PTB18);
 // the setup routine runs once when you press reset:
