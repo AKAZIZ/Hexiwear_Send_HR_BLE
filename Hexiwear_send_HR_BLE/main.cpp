@@ -284,10 +284,17 @@ int main()
 
         }
         maxim_heart_rate_and_oxygen_saturation(aun_ir_buffer, n_ir_buffer_length, aun_red_buffer, &n_sp02, &ch_spo2_valid, &n_heart_rate, &ch_hr_valid);
-
-        blueLed = !kw40z_device.GetAdvertisementMode(); /*Indicate BLE Advertisment Mode*/  
+        
+        // to Send data under the condition of the heart rate value, the following part of code must be uncommented
+      
+        /*if(n_heart_rate > threshold)
+        {
+        blueLed = !kw40z_device.GetAdvertisementMode(); //Indicate BLE Advertisment Mode  
         Thread::wait(50);
-
+        }*/
+      
+         blueLed = !kw40z_device.GetAdvertisementMode(); /*Indicate BLE Advertisment Mode*/  
+        Thread::wait(50);
     }
          
      
