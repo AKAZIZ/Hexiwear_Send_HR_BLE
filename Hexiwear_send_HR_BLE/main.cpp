@@ -259,24 +259,7 @@ int main()
 //            led.write(1-(float)n_brightness/256);
 //#endif
 
-                 if(n_heart_rate>300)
-                 {
-                   n_heart_rate=66;
-                 }
-                  else if (n_heart_rate>200) 
-                 {
-                      n_heart_rate=65;
-                   }
-                  else if (n_heart_rate>70) 
-                 {
-                      n_heart_rate=64;
-                   }                   
-                  else if (n_heart_rate<45) 
-                 {
-                      n_heart_rate=45;
-                   }                   
-                   else
-                 {}   
+ 
             //send samples and calculation result to terminal program through UART
             textProperties.fontColor= COLOR_WHITE;
             oled.SetTextProperties(&textProperties);
