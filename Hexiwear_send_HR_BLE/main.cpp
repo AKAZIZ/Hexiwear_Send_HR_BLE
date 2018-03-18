@@ -285,7 +285,8 @@ int main()
         }
         maxim_heart_rate_and_oxygen_saturation(aun_ir_buffer, n_ir_buffer_length, aun_red_buffer, &n_sp02, &ch_spo2_valid, &n_heart_rate, &ch_hr_valid);
         
-        // to Send data under the condition of the heart rate value, the following part of code must be uncommented
+        // to Send data with a condition on the heart rate value, the following part of code must be uncommented and the threshold
+        // must be indicated with a value.
       
         /*if(n_heart_rate > threshold)
         {
