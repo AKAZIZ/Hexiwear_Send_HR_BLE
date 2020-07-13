@@ -8,7 +8,7 @@
 *           TARGET: MK64FN1M0VDC12 (CPU: ARM® Cortex®-M4 32-bit core)
 *           COMPILER: MBED
 *
-*           Some parts of this code have been ispired from the code of MAX30102 sensor, which was written
+*           Some parts of this code have been ispired from the code of MAX30102 sensor, which were written
 *           by Maxim Integrated Products, Inc, which own all its rights.
 *
 *********************************************************************************************************************/
@@ -87,7 +87,6 @@ bool MAX30101::maxim_max30101_read_reg(uint8_t uch_addr, uint8_t *puch_data)
 /* Who I am function
 *  This function serves to check
 *  if the I2C interface was established successfully
-*  Ispired from the MAX30102's Code 
 */
 
 bool  MAX30101::who_I_am(void) {
@@ -108,7 +107,6 @@ bool  MAX30101::who_I_am(void) {
 /* This function initializes the max30101
 *  param        None
 *  Return True on Success
-*  Ispired from the MAX30102's Code
 */
 
 bool MAX30101::maxim_max30101_init()
@@ -147,7 +145,6 @@ bool MAX30101::maxim_max30101_init()
 *  param[out]   *pun_red_led   - pointer that stores the red LED reading data
 *  param[out]   *pun_ir_led    - pointer that stores the IR LED reading data
 *  Return True on Success 
-*  Ispired from the MAX30102's Code 
 */
 
 bool MAX30101::maxim_max30101_read_fifo(uint32_t *pun_red_led, uint32_t *pun_ir_led)
@@ -200,7 +197,6 @@ bool MAX30101::maxim_max30101_read_fifo(uint32_t *pun_red_led, uint32_t *pun_ir_
 /* This function resets the max30101
 *  param        None
 *  Return True on Success 
-*  Ispired from the MAX30102's Code 
 */
 
 bool MAX30101::maxim_max30101_reset()
